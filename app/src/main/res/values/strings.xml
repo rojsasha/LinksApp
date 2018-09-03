@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">LinksApp</string>
+    <string name="toolbar_main_title">Спорт</string>
+    <string name="viewpager_football">Футбол</string>
+    <string name="viewpager_basketball">Баскетбол</string>
+    <string name="viewpager_tennis">Теннис</string>
+    <string name="viewpager_volleyball">Волейбол</string>
+    <string name="viewpager_hockey">Хоккей</string>
+    <string name="viewpager_cybersport">Киберспрот</string>
+    <string name="snackbat_connection_failed">Пожалуйста проверьте интернет соединение</string>
+    <string name="reload">Перезагрузить</string>
+    <string name="toolbat_article">Статья</string>
+</resources>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/linearLayout"
+    tools:context=".ui.details.DetailsActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <include layout="@layout/progressbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:paddingBottom="15dp"
+                android:text="лига 1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+            <TextView
+                android:id="@+id/tournament"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="predicsdsdsdtion"
+                android:textColor="@color/colorAccent"
+                android:paddingBottom="10dp"
+                app:layout_constraintTop_toBottomOf="@id/title" />
+             <TextView
+                android:id="@+id/time"
+                 android:textColor="@color/colorAccent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="predicsdsdsdtion"
+                android:paddingBottom="10dp"
+                app:layout_constraintTop_toBottomOf="@id/tournament" />
+
+
+            <TextView
+                android:id="@+id/prediction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="prediction"
+                android:textSize="17sp"
+                app:layout_constraintTop_toBottomOf="@id/time" />
+
+            <TextView
+                android:id="@+id/team1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="team1"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/prediction" />
+
+            <TextView
+                android:id="@+id/article"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:textSize="17sp"
+                app:layout_constraintTop_toBottomOf="@id/team1" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>
