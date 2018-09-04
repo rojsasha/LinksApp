@@ -86,6 +86,7 @@ public abstract class BaseFragment extends Fragment implements NewsContract.View
     }
 
     protected void showToast(String msg) {
+        mCallback.refreshAdapter();
         Toast.makeText(getContext(), msg, Toast.LENGTH_SHORT).show();
         hideProgress();
     }
